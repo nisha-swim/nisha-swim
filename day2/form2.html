@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job portal</title>
+</head>
+<style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color: #1f2937;
+    line-height: 1.6;
+}
+header{
+    background-color:rgb(10, 24, 63);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+h1{
+    margin-bottom: 5px;
+}
+header p{
+    color: rgb(173, 164, 164);
+    font-size: 15px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+form{
+    background-color:white;
+    width: 100%;
+    max-width: 500px;
+    padding:30px ;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+fieldset{
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 20px;
+    display:flex ;
+    flex-direction: column;
+    gap: 10px;
+}
+legend{
+    font-weight: bold;
+    color:rgb(1, 24, 6) ;
+    padding: 0 8px;
+}
+label{
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size:15px ;
+    width: 100%;
+}
+
+fieldset label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button{
+    background-color:rgb(10, 24, 63);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgb(48, 4, 89) ;
+}
+
+footer{
+    background-color:rgb(10, 24, 63);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media(max-width:768px){
+
+    header{
+        padding: 20px 15px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+    header p{
+        font-size: 14px;
+    }
+    main{
+        padding: 20px 10px;
+    }
+    form{
+        padding: 20px;
+        gap: 20px;
+        box-shadow: none;
+    }
+
+    fieldset{
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select{
+        font-size:14px;
+        padding: 8px;
+
+    }
+    button{
+        font-size: 15px;
+        padding: 10px;
+    }
+footer{
+    font-size: 14px;
+    padding: 12px;
+}
+
+}
+</style>
+<body>
+    <header>
+        <h1> Job Application form</h1>
+        <p>Please fill the reuired details</p>
+        <hr>
+    </header>
+
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name</label><br>
+                <input type="text" name="name" id="name" required><br>
+            
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" name="phone" id="phone" required><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" required><br>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label>
+                    <input type="radio" name="gender" id="gender" required>Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender" required>Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender" required>Other
+                </label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label>
+                    <input type="checkbox" name="skills" id="skills" required>HTML
+                </label><br>
+                 <label>
+                    <input type="checkbox" name="skills" id="skills" required>CSS
+                </label><br>
+                 <label>
+                    <input type="checkbox" name="skills" id="skills" required>Javascript
+                </label><br>
+                 <label>
+                    <input type="checkbox" name="skills" id="skills" required>MERN Stack
+                </label><br>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend> Education </legend>
+                <label for="education">Highest Qualification:</label>
+                <select name="eductaion" id="education">
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="Graduate">Graduate</option>
+                    <option value="Postgraduate">Postgraduate</option>
+                </select>
+            </fieldset>
+            <br>
+           <button type="submit">Submit Application</button>
+        </form>
+    </main>
+
+    <footer>
+    
+        <p>&copy; 2025 Job Portal</p>
+    </footer>        
+    </main>
+</body>
+</html>

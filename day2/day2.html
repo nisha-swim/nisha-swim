@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Page</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: #333;
+    background-color:#f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color:#1e293b;
+    color: white;
+    padding: 20px;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+} 
+nav{
+   
+    display: flex;
+    gap: 20px;
+    
+} 
+nav a{
+    text-decoration: none;
+    color: rgb(241, 239, 239);
+    font-weight: bold;
+}
+main{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+} 
+section{
+background-color: white;
+padding: 30px;
+border-radius: 8px;    
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color:#1f293b;
+    color: white;
+}
+h2:hover{
+    color: #1e293b;
+}
+
+ a:hover{
+    color: rgb(128, 126, 126);
+}
+nav a:hover{
+    text-decoration: underline; 
+} 
+
+@media(max-width:768){
+    header{
+        text-align: center;
+    }
+    nav{
+flex-direction: column;
+gap: 10px;
+margin-top: 15px;
+    }
+
+    main{
+        padding: 20px;
+        gap: 20px;
+    }
+
+    section{
+        padding: 20px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    
+    footer{
+        text-align: center;
+        font-size: 14px;
+    }
+}
+</style>
+
+<body>
+
+    <header>
+        <h1>My Semantic Website</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#article">Article</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is Home Page</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>This is about page</p>
+        </section>
+
+        <section id="article">
+            <h2>Article</h2>
+            <article>
+                <h4>Learning HTML</h4>
+                <p>HTML is the foundation of web development.
+                Using proper structure makes your code professional</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>This is contact page</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sematic HTML Page</p>
+    </footer>
+    
+</body>
+</html>
